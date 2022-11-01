@@ -1,0 +1,51 @@
+<!--Name: Fawad Mohammed Zaheer
+Student Id: 301230271
+Course: COMP_229(Web Application Development)
+Instructor: Malek Zakeyabanu
+Assignment: Assignment-2(Authentication)
+--> 
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include partials/header.ejs %>
+</head>
+<body>
+    <header>
+        <% include partials/main_nav.ejs %>
+    </header>
+
+<!--Main content-->
+<main class="container">
+<div class="jumbotron">
+  <h1 class="display-4">Welcome to the <%= title%> page!</h1>
+  
+</div>
+</main>
+<br>
+<center><h2>Introduction</h2></center>
+<img src="/images/profile_pic.jpg" class="profile" alt="picture" width="40%" height="50%"><br><br>
+
+<div id="aboutPara">
+<p> Hello readers! My name is Fawad Mohammed Zaheer and I am a student of Software Engineering Technology 
+    from Centennial College. I am originally from India. Before coming to Canada, I just completed my High School.
+    Coming to Canada was the biggest step in my life and it changed my life completely. I am fond of playing sports in
+    my free time. The sports that I play are Cricket, Table Tennis, and Football. Coming to the software engineering
+    side, I gained some technical knowledge in few languages such as HTML5, CSS3, JavaScript, Express.js C#, 
+    Linux/Unix and MySQL. I hope to excel in this course and in my future as well. To know me more, please check out
+    my resume attached below.</p>
+    <br>
+    <span class="resumeLink"><a href="/Assets/resume.docx"><i class="fa-solid fa-download"></i>  Resume.docx</a></span>
+</div><br>
+
+<footer>
+    <% include partials/bottom_nav.ejs %>
+</footer>
+
+<script src = "/jquery/dist/jquery.min.js"></script>
+    <script src = "/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src = "/Script/app.js"></script> 
+
+</body>
+</html>

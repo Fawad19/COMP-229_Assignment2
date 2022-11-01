@@ -1,0 +1,47 @@
+<!--File Name: home.ejs
+    Name: Fawad Mohammed Zaheer
+    Student Id: 301230271
+    Course: COMP-229 Sec.008-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include partials/header.ejs %>
+</head>
+<body>
+    <header>
+        <% include partials/main_nav.ejs %>
+    </header>
+
+<!--Main content-->
+<main class="container">
+<div class="jumbotron">
+  <h1 class="display-4">Welcome to the <%= title%> page!</h1>
+  
+</div>
+</main>
+ 
+    <center><button id = "b1Home" type="button"> About Me </button></center>
+    <script type = "text/javascript">
+        document.getElementById("b1Home").onclick= function(){
+            location.href = "http://localhost:3000/about";
+        };
+        </script>
+        <div id = "homeContent">
+            <p> Welcome to my little world where I am trying to build a website of my own. So, I created a
+                website which has various pages and describes about myself. As you can see, there are different pages in the navigation bar. We will slowly explore the pages. Firstly, click on the "About" page 
+                to learn more about me.
+            </p>
+        </div>
+
+<footer>
+    <% include partials/bottom_nav.ejs %>
+</footer>
+
+<script src = "/jquery/dist/jquery.min.js"></script>
+    <script src = "/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src = "/Script/app.js"></script> 
+
+</body>
+</html>
